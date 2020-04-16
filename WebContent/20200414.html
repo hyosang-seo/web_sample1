@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 
 <meta name="viewport"
-	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+	content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" url="img/icons8-laptop-64.png">
 
 <!-- HTML4 규약을 따른다. -->
@@ -20,7 +20,32 @@
 
 <link rel='stylesheet' href='CSS.css'>
 
+ <style type="text/css">
+ @media(max-width : 1035px){
+		.line:after {
+		width: 39%;
+		}
+	
+	.line:before {
+		width: 40%;
+		}
+		
+	footer{
+		display: block;
+	}
+}
 
+@media(max-width : 410px){
+		.line:after {
+		width: 36%;
+		}
+	
+	.line:before {
+		width: 37%;
+		}
+} 
+
+</style>
 </head>
 <body>
 
@@ -75,53 +100,43 @@
 
 		</div>
 
-		<p class='line'><span>OUR CLIENTS</span></p>
+		<p class='line seceond_line'><span>OUR CLIENTS</span></p>
 
 		<div class = 'our_client'>
-			<img src='img/6.jpg' id='tag1'> 
-			<img src='img/6.jpg' id='tag2'> 
-			<img src='img/6.jpg' id='tag3'> 
-			<img src='img/6.jpg' id='tag4'> 
-			<img src='img/6.jpg' id='tag5'> 
-			<img src='img/6.jpg' id='tag6'> 
- 
-		</div>
 
+			<img src='img/6.jpg' alt = 'client'> 
+			<img src='img/6.jpg' alt = 'client'> 
+			<img src='img/6.jpg' alt = 'client'> 
+			<img src='img/6.jpg' alt = 'client'> 
+			
+		</div>
 	</main>
 
 
 	<footer>
-		<div style='display: flex'>
-			<div>
+			<div class= 'footer_left'>
 				<p>About us</p>
-
 				<p>
-					이 사진은 무료 웹 디자인 사이트에서 퍼온 디자인입니다.<br> 
-					이 사진은 무료 웹 디자인 사이트에서 퍼온 디자인입니다.<br> 
-					이 사진은 무료 웹 디자인 사이트에서 퍼온 디자인입니다.<br> 
-					이 사진은 무료 웹 디자인 사이트에서 퍼온 디자인입니다.<br> 
+					이 사진은 무료 웹 디자인 사이트에서 퍼온 디자인입니다.<br> 이 사진은 무료 웹 디자인 사이트에서 퍼온
+					디자인입니다.<br> 이 사진은 무료 웹 디자인 사이트에서 퍼온 디자인입니다.<br> 이 사진은 무료
+					웹 디자인 사이트에서 퍼온 디자인입니다.<br>
 				</p>
-					<div  style ='text-align: right'>
-				<a href='http://sourcetree.kr/?cat=TEMPLATE#'><button>LEARN MORE</button>
-			</div>
-			</div>
-			<div class='contact'
-				style='flex-direction: column; position: absolute; right: 100px;'>
-				<div>
-					<img src='img/5.png' style='width: 50px; height: 50px;'> <b>hyosang.seo94@gmail.com</b>
+				<div style='text-align: right'>
+					<a href='http://sourcetree.kr/?cat=TEMPLATE#'><button>LEARN MORE</button></a>
 				</div>
-
+			</div>
+			
+			<div class='footer_right'>
 				<div>
 					<img src='img/5.png' style='width: 50px; height: 50px;'> <b>hyosang.seo94@gmail.com</b>
 				</div>
 				<div>
 					<img src='img/5.png' style='width: 50px; height: 50px;'> <b>hyosang.seo94@gmail.com</b>
 				</div>
-
+				<div>
+					<img src='img/5.png' style='width: 50px; height: 50px;'> <b>hyosang.seo94@gmail.com</b>
+				</div>
 			</div>
-
-
-		</div>
 	</footer>
 
 

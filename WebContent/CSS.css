@@ -1,5 +1,5 @@
-@charset "UTF-8";
-
+/* @charset "UTF-8";
+ */
 
 /*  p {
 	border: 1px solid black;
@@ -74,35 +74,32 @@ main .comment div{
 
 .line:after {
 	display: inline-block;
-	margin: 0 0 5px 20px;
+	margin: 0 0 0.5vw 1vw;
 	height: 1px;
 	content: "";
 	text-shadow: none;
 	background-color: #999;
-	width: 42%;
+	width: 41%;
 }
 
 .line:before {
 	display: inline-block;
-	margin: 0 20px 5px 0;
+	margin: 0 1vw 0.5vw 0;
 	height: 1px;
 	content: "";
 	text-shadow: none;
 	background-color: #999;
-	width: 42%;
+	width: 41%;
 }
 
 .line span{	
 	display : inline-block;
-	font-size: 20px;
+	font-size: 2vw;
 	color: yellow;
 	font : bolder;
 	background-color: rgb(64,63,69);
-	padding: 0 20px 0 20px;
+	padding: 0 10px 0 10px;
 }
-
-
-
 
 
 
@@ -111,14 +108,12 @@ main .top_boxs {
 	justify-content: center;
 }
 
-main .top_boxs img{
+main .top_boxs img, main .our_work img, main .our_client img{
 	margin-left: 3vw;
 	margin-right: 3vw;
-	width: 200px;
-	height: 250px;
-	background-color: #F2F5A9;
+	width: 20vw;
+	height: 20vw;
 }
-
 
 
 main .our_work {
@@ -128,57 +123,24 @@ main .our_work {
 	
 }
 
-
-main .our_work img{
-	display : inline-block;
-	margin-left: 3vw;
-	margin-right: 3vw;
-	width: 200px;
-	height: 250px;
-}
-
 main .our_client{
 	margin-bottom : 100px;
 	display: flex;
+
 	
 }
-
-main .our_client #tag1{
-	width: 200px;
-	heigth : 200px;
-}
- main .our_client #tag2{
-	width: 400px;
-heigth : 400px;
- }
- main .our_client #tag3{
-	width: 100px;
-heigth : 100px;
- }
- main .our_client #tag4{
-	width: 240px;
-heigth : 240px;
- }
- main .our_client #tag5{
-	width: 210px;
-heigth : 210px;
- }
- main .our_client #tag6{
-	width: 160px;
-heigth : 160px;
- }
-
-
-
 
 
 footer {
-	 background-color: #36454F
-	
+	color:white;
+	display: flex;
+	background-color: #36454F;
+	justify-content: space-around;
 }
 
 a {
 	color: black;
 	text-decoration: none;
- 
 }
+
+
