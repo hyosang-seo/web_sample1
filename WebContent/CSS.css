@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+
+/*  p {
+	border: 1px solid black;
+}
+
+div {
+	border: 1px solid gray;
+}
+
+ol {
+	border: 1px solid yello;
+}
+li {
+	border: 1px solid red;
+}  */
+
+button {
+    width:100px;
+    background-color: rgb(65,63,73);
+    border: none;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+body {
+	font-family: 'kopubdotum', sans-serif;
+	background-color: #E6E6E6;
+}
+
+.head_menu ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+.head_menu ul li {
+	font-size: 1vw;
+	margin-right: 3vw;
+}
+
+
+main #main_img{
+	width: 100%;
+	height: auto;
+}
+		
+
+main .comment{
+	margin : 20px 0 20px 0;
+	text-align: center;
+}
+
+main .comment div{
+	display: inline-block;
+}
+
+
+
+.line {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 0;
+	text-align: center;
+}
+
+.line:after {
+	display: inline-block;
+	margin: 0 0 5px 20px;
+	height: 1px;
+	content: "";
+	text-shadow: none;
+	background-color: #999;
+	width: 42%;
+}
+
+.line:before {
+	display: inline-block;
+	margin: 0 20px 5px 0;
+	height: 1px;
+	content: "";
+	text-shadow: none;
+	background-color: #999;
+	width: 42%;
+}
+
+.line span{	
+	display : inline-block;
+	font-size: 20px;
+	color: yellow;
+	font : bolder;
+	background-color: rgb(64,63,69);
+	padding: 0 20px 0 20px;
+}
+
+
+
+
+
+
+main .top_boxs {
+	display: flex;
+	justify-content: center;
+}
+
+main .top_boxs img{
+	margin-left: 3vw;
+	margin-right: 3vw;
+	width: 200px;
+	height: 250px;
+	background-color: #F2F5A9;
+}
+
+
+
+main .our_work {
+	margin-bottom : 100px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+
+main .our_work img{
+	display : inline-block;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	width: 200px;
+	height: 250px;
+}
+
+main .our_client{
+	margin-bottom : 100px;
+	display: flex;
+	
+}
+
+main .our_client #tag1{
+	width: 200px;
+	heigth : 200px;
+}
+ main .our_client #tag2{
+	width: 400px;
+heigth : 400px;
+ }
+ main .our_client #tag3{
+	width: 100px;
+heigth : 100px;
+ }
+ main .our_client #tag4{
+	width: 240px;
+heigth : 240px;
+ }
+ main .our_client #tag5{
+	width: 210px;
+heigth : 210px;
+ }
+ main .our_client #tag6{
+	width: 160px;
+heigth : 160px;
+ }
+
+
+
+
+
+footer {
+	 background-color: #36454F
+	
+}
+
+a {
+	color: black;
+	text-decoration: none;
+ 
+}
