@@ -3,79 +3,14 @@
 <head>
 <meta charset="UTF-8">
 
+<!-- CSS Load -->
+<link rel='stylesheet' href='check_box_css.css'>
+
 
 <title>Insert title here</title>
 
 	<style type="text/css">
-		
-		label {
-		
-		position:absolute;
-		top:50%;
-		left:50%;
-		transform:translate(-50%,-50%);
-		}
-		.check input{
-			display : none;
-		}
-		
-	 	.check .icon{
-		display : inline-block;
-		width : 100px;
-		height: 100px;
-		background-color: transparent;
-		border: 10px solid #000;
-		border-radius: 5px;
-		position: relative;
-		cursor: pointer;
-		}
-		
-		
-		
-		
-		 .check .icon::before, .check .icon::after{
-		content:'';
-		display: inline-block;
-		width : 20px;
-		height: 0;
-		background-color: #ff1100;
-		position : absolute;
-		transform-origin :left top;
-		border-radius:5px;
-		} 
-
-		
-		.check .icon::before{
-		top : 50px;
-		left: 12px;
-		transform: rotate(-45deg);
-		}
-		.check .icon::after{
-		top : 85px;
-		left :48px;
-		transform: rotate(-135deg);
-		}
-		.check input:checked ~ .icon{
-		border-color : #ff1100;
-		}
-		.check input:checked ~ .icon::before{
-		height : 50px;
-		transition : all .35s ease;
-		}
-		.check input:checked ~ .icon::after{
-		height : 120px;
-		transition : all .35s ease .35s;
-		}
-		 
-		 
-/* 		 
-.check .icon::before {top: 50px;left: 12px;transform: rotate(-45deg);}
-.check .icon::after {top: 85px;left: 48px;transform: rotate(-135deg);}
-
-.check input:checked ~ .icon {border-color: #ff1100;}
-.check input:checked ~ .icon::before {height: 50px;transition:all .35s ease;}
-.check input:checked ~ .icon::after {height: 120px;transition:all .35s ease .35s;} */
-		
+	
 		
 	
 	</style> 
@@ -85,14 +20,126 @@
 
 
 
-
 </head>
+
 <body>
 
-	<label class = 'check'>
-		<input type='checkbox'>
-		<span class = 'icon'></span>
-	</label>
+	<div class = 'first'>	
+	<h3> first</h3>
+		<label class = 'check'>
+			<input type='checkbox'>
+			<span class = 'icon'></span>
+		</label>
+	</div>
+	
+	
+	<div class = 'second'>	
+ 	<h3> second</h3>
+		
+			<input type='checkbox' id = 'menuicon1'>
+			<label for = 'menuicon1'>
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		
+	</div>
 
+	<div class = 'third'>	
+	<h3> third</h3>
+		
+			<input type='checkbox' id = 'menuicon2'>
+			<label for = 'menuicon2'>
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<div class = "sidebar">
+			</div>
+		
+	</div>
+	
+	
+	<div class = 'forth'>	
+	<h3> forth</h3>
+		<input type='radio' name = 'tab_menu' id = 'tab01' checked>
+		<label for = 'tab01'>컨텐츠 탭 버튼 01</label>
+		
+		<input type='radio' name = 'tab_menu' id = 'tab02'>
+		<label for = 'tab02'>컨텐츠 탭 버튼 02</label>
+		
+		<input type='radio' name = 'tab_menu' id = 'tab03'>
+		<label for = 'tab03'>컨텐츠 탭 버튼 03</label>
+		
+		<div class = "conbox con1">컨탠츠탭 내용01</div>
+		<div class = "conbox con2">컨탠츠탭 내용02</div>
+		<div class = "conbox con3">컨탠츠탭 내용03</div>
+	</div>
+	
+	<div class = 'fifth'>	
+	<h3> fifth</h3>
+		<input type='radio' name = 'tab_menu2' id = 'tab02_1' checked>
+		<input type='radio' name = 'tab_menu2' id = 'tab02_2'>
+		<input type='radio' name = 'tab_menu2' id = 'tab02_3'>
+		
+		
+		<div class = "conbox2 con02_1">컨탠츠탭 내용01</div>
+		<div class = "conbox2 con02_2">컨탠츠탭 내용02</div>
+		<div class = "conbox2 con02_3">컨탠츠탭 내용03</div>
+		
+		<div class ="btn">
+			<label for = 'tab02_1'></label>
+			<label for = 'tab02_2'></label>
+			<label for = 'tab02_3'></label>
+		</div>
+	</div>
+	
+	
+	<div class = 'sixth'>	
+		<h3> sixth </h3>
+			<input type="checkbox" name="accordion" id="answer01">
+			<label for="answer01"> 제목 부분<em></em></label>
+			
+			<div>
+				<p>여기에 추가되는 부분이 자주묻는 질문의 답변내용이 이 영역에 들어갑니다. 이곳에서 자연스럽게 나오는 효과를 볼 수 있습니다. 이 기능으로 자주묻는 질문컨텐츠를 만들 수 있습니다.</p>
+			</div>
+			
+			<input type="checkbox" name="accordion" id="answer02">
+			<label for="answer02">제목 부분<em></em></label>
+			
+			<div>
+				<p>여기에 추가되는 부분이 자주묻는 질문의 답변내용이 이 영역에 들어갑니다. 이곳에서 자연스럽게 나오는 효과를 볼 수 있습니다. 이 기능으로 자주묻는 질문컨텐츠를 만들 수 있습니다.</p>
+			</div>
+						
+			<input type="checkbox" name="accordion" id="answer03">
+			<label for="answer03">제목 부분<em></em></label>
+			
+			<div>
+				<p>여기에 추가되는 부분이 자주묻는 질문의 답변내용이 이 영역에 들어갑니다. 이곳에서 자연스럽게 나오는 효과를 볼 수 있습니다. 이 기능으로 자주묻는 질문컨텐츠를 만들 수 있습니다.</p>
+			</div>
+						
+			<input type="checkbox" name="accordion" id="answer04">
+			<label for="answer04">컨텐츠 제목 부분<em></em></label>
+			
+			<div>
+				<p>여기에 추가되는 부분이 자주묻는 질문의 답변내용이 이 영역에 들어갑니다. 이곳에서 자연스럽게 나오는 효과를 볼 수 있습니다. 이 기능으로 자주묻는 질문컨텐츠를 만들 수 있습니다.</p>
+			</div>
+						
+	</div>
+	
+	<div class = 'seventh'>
+		<input type="checkbox" id="popup">
+		<label for="popup">VIEW</label>
+		
+		<div>                     <!-- 전체화면 -->
+			<div>								<!-- 모달 화면 -->
+				<label for="popup"></label>  <!-- 모달 화면 종료 마크-->
+			</div>
+			
+			<label for="popup"></label>		 <!-- 외부 클릭시 종료 -->
+		</div>
+	
+	</div>
+	
 </body>
 </html>
